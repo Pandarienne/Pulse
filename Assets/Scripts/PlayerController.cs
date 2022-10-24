@@ -13,10 +13,10 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer playerSR;
     public Animator playerAC;
 
-    public Sprite blorboForward;
-    public Sprite blorboBackward;
+    // public Sprite blorboForward;
+    // public Sprite blorboBackward;
 
-    private bool movingBack;
+    // private bool movingBack;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +29,21 @@ public class PlayerController : MonoBehaviour
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
         moveInput.Normalize();
-
+        
         playerRB.velocity = new Vector3(moveInput.x * moveSpeed, playerRB.velocity.y, moveInput.y * moveSpeed);
+
+        // if((moveInput.x != 0 || moveInput.y != 0) && playerAC.GetBool("isWalking") == false){
+        //     playerAC.SetBool("isWalking", true);
+        // } else if((moveInput.x == 0 || moveInput.y == 0) && playerAC.GetBool("isWalking") == true){
+        //     playerAC.SetBool("isWalking", false);
+        // }
+
+        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)){
+            playerAC.SetBool("isWalking", true);
+        }
+        if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D)){
+            playerAC.SetBool("isWalking", false);
+        }
 
         if(playerSR.flipX && moveInput.x < 0){
             playerSR.flipX = false;
@@ -38,13 +51,12 @@ public class PlayerController : MonoBehaviour
             playerSR.flipX = true;
         }
 
-        if(!movingBack && moveInput.y > 0){
-            movingBack = true;
-            playerSR.sprite = blorboBackward;
-        } else if(movingBack && moveInput.y < 0){
-            movingBack = false;
-            playerSR.sprite = blorboForward;
-        }
-        playerAC.SetBool("movingBackwards", movingBack);
+        // if(!movingBack && moveInput.y > 0){
+        //     movingBack = true;
+        //     playerSR.sprite = blorboBackward;
+        // } else if(movingBack && moveInput.y < 0){
+        //     movingBack = false;
+        //     playerSR.sprite = blorboForward;
+        // }
     }
 }
