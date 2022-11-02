@@ -2,10 +2,15 @@
 tags:
 ---
 It's a hammer.
-<<if $has_tools == false>>
-    -> Pick up hammer.
-        <<set $has_tools = true>>
-    -> Put stickers on hammer.
-        It's now a stickered hammer.
+<<if $hole_quest != 0>>
+    <<if $has_tools == false>>
+        -> Rookie: Pick up hammer.
+            <<pick_up hammer $has_tools>>
+            You picked up the hammer.
+        -> Rookie: Put stickers on hammer.
+            It's now a stickered hammer.
+    <<endif>>
+<<else>>
+    I wonder what you could use this for.
 <<endif>>
 ===

@@ -1,0 +1,9 @@
+﻿title: ladder
+tags:
+---
+It's a ladder.
+-> Go Up
+    <<teleport true>>
+-> Go Down
+    <<teleport false>>
+===

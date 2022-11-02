@@ -5,8 +5,10 @@ tags:
     There's an open hole in the wall. It's leaking water. Oh no!
     <<if $has_tools>>
         -> Fix Hole.
-            The hole is now patched up. Still leaking, but it'll hold. 
-            <<set $hole_patched = true>>
+            The hole is now patched up. Still leaking, but it'll hold.
+            <<delete hole water_leak>> 
+            <<play_sound hammer>>
+            <<pick_up hole $hole_patched>>
     <<endif>>
 <<else>>
     It was a hole on the wall, but you patched it up. Go you!

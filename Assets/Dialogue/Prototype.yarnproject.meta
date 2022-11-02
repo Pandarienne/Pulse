@@ -12,8 +12,9 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: 96f3d38e75fbbad4b970e0d227e643e7, type: 3}
   - {fileID: 6391573757903218779, guid: 304614ada1b95444c85dd4fc4c8ace6c, type: 3}
   - {fileID: 6391573757903218779, guid: 8a52af664850541498191b64e3442160, type: 3}
-  - {fileID: 6391573757903218779, guid: 5ab811219f8bba748a0c5a89faa49767, type: 3}
   - {fileID: 6391573757903218779, guid: c9b29d4c8e70fa347a8dd71701895a1c, type: 3}
+  - {fileID: 6391573757903218779, guid: 5ab811219f8bba748a0c5a89faa49767, type: 3}
+  - {fileID: 6391573757903218779, guid: 5734f6836a373614cad3e84d4ee761d8, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $hole_quest
