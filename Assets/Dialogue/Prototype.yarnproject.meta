@@ -11,8 +11,35 @@ ScriptedImporter:
   sourceScripts:
   - {fileID: 6391573757903218779, guid: 96f3d38e75fbbad4b970e0d227e643e7, type: 3}
   - {fileID: 6391573757903218779, guid: 304614ada1b95444c85dd4fc4c8ace6c, type: 3}
+  - {fileID: 6391573757903218779, guid: 8a52af664850541498191b64e3442160, type: 3}
+  - {fileID: 6391573757903218779, guid: 5ab811219f8bba748a0c5a89faa49767, type: 3}
+  - {fileID: 6391573757903218779, guid: c9b29d4c8e70fa347a8dd71701895a1c, type: 3}
   compileErrors: []
-  serializedDeclarations: []
+  serializedDeclarations:
+  - name: $hole_quest
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 96f3d38e75fbbad4b970e0d227e643e7, type: 3}
+  - name: $hole_patched
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 96f3d38e75fbbad4b970e0d227e643e7, type: 3}
+  - name: $has_tools
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 96f3d38e75fbbad4b970e0d227e643e7, type: 3}
   defaultLanguage: en-US
   languagesToSourceAssets: []
   useAddressableAssets: 0

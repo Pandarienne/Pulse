@@ -1,0 +1,8 @@
+title: launch
+tags: 
+---
+Captain: Hey Rookie! Get over to the brig, I have a job that needs to get done!
+<<declare $hole_quest to 0>>
+<<declare $hole_patched to false>>
+<<declare $has_tools to false>>
+===

@@ -1,0 +1,17 @@
+﻿title: bubbles
+tags:
+---
+Bubbles: Hiya there friend! Need anything?
+<<if $hole_patched == false>>
+    <<if $hole_quest == 1>>
+        -> Rookie: How do I patch that hole?
+            <<if $has_tools == true>>
+                Bubbles: Oh! I see you have the tools. Just walk up to it and bang on it with the hammer. Should fix it right up.
+            <<else>>
+                Bubbles: Hmmm, it seems you don’t have any of the tools required to do the job. There should be some in storage. Fetch those real quick!
+            <<endif>>
+    <<endif>>
+<<endif>>
+-> Rookie: Who are you?
+    Bubbles: I’m Bubbles! Local mechanic here on the ship. I fix holes, load weapons, among other things. If you’re ever in need of answers, I’m your sailor!
+===

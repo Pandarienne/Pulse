@@ -1,0 +1,23 @@
+﻿title: captain
+tags:
+---
+Captain: Hey Rookie!
+<<if $hole_quest == 0>>
+    <<if $hole_patched == false>>
+        Captain: There’s a hole that needs to get patched in the Atrium. Get on it.
+        <<set $hole_quest to 1>>
+        -> Rookie: How do I patch it?
+            Captain: There should be some tools in the Storage room down below. Ask Bubbles to help out if you want.
+    <<endif>>
+<<elseif $hole_quest == 1>>
+    Captain: Have you fixed the hole yet?
+    <<if $hole_patched == false>>
+        -> Rookie: Nope!
+            Captain: Get on it then, we don't have all day!
+    <<elseif $hole_patched == true>>
+        -> Rookie: Yep!
+            <<set $hole_quest = 2>>
+            Captain: Good job rookie! Now go load some torpedoes in weapons, I sense danger coming.
+    <<endif>>
+<<endif>>
+===

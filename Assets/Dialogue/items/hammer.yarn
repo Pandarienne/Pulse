@@ -1,0 +1,11 @@
+﻿title: hammer
+tags:
+---
+It's a hammer.
+<<if $has_tools == false>>
+    -> Pick up hammer.
+        <<set $has_tools = true>>
+    -> Put stickers on hammer.
+        It's now a stickered hammer.
+<<endif>>
+===

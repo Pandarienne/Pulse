@@ -11,6 +11,7 @@ public class NPC : MonoBehaviour
     private GameObject eButton;
     private bool hasButton = false;
     private DialogueRunner DR;
+    private SpriteRenderer SR;
     // Start is called before the first frame update
     void Start()
     {

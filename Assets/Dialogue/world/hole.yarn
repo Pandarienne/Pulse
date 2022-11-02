@@ -1,0 +1,14 @@
+﻿title: hole
+tags:
+---
+<<if $hole_patched == false>>
+    There's an open hole in the wall. It's leaking water. Oh no!
+    <<if $has_tools>>
+        -> Fix Hole.
+            The hole is now patched up. Still leaking, but it'll hold. 
+            <<set $hole_patched = true>>
+    <<endif>>
+<<else>>
+    It was a hole on the wall, but you patched it up. Go you!
+<<endif>>
+===
